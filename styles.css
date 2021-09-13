@@ -1,0 +1,133 @@
+:root {
+    --white: #fff;
+    --light-grey: #efefef;
+    --dark-grey: #434242;
+    --red: #e60012;
+    --light-blue: #d6f0fa;
+    --dark-blue: #0b2b6b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: var(--dark-grey);
+}
+
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-header {
+    display: grid;
+    grid-template-columns: 140px auto 30%;
+    width: 100%;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.top-header .nintendo-logo {
+    background-color: var(--red);
+    height: 55px;
+}
+
+.nintendo-logo img {
+    width: 65%;
+}
+
+.header-nav {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.header-nav a {
+    margin: 0 0.6rem;
+}
+
+.header-nav span {
+    font-size: 1rem;
+}
+
+.link {
+    color: var(--dark-grey);
+    transition: color 0.3s;
+    font-weight: 700;
+}
+
+.link:hover {
+    color: var(--red);
+}
+
+.game-main-image {
+    position: relative;
+}
+
+.search-input {
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    border-bottom: 1px solid var(--dark-grey);
+    margin: 1.5rem 2rem 0.5rem 2rem;
+}
+
+.search-input input {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    width: auto;
+}
+
+.search-input i {
+    font-size: 1.2rem;
+}
+
+.search-input:hover {
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.search-input input:hover::placeholder {
+    color: var(--red);
+}
+
+.search-input input:focus {
+    outline: none;
+}
+
+.bottom-header {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.bottom-header i {
+    font-size: 1.43rem;
+    padding: 0 0.5rem;
+}
+
+.bottom-header a {
+    padding: 0 1rem;
+}
+
+.game-banner {
+    background: linear-gradient(var(--light-blue) 85%, var(--white) 0% 100%);
+    padding: 2rem 0;
+}
+
+.game-seal {
+    margin-top: auto;
+    margin-bottom: 7.5rem;
+    margin-left: 1.5rem;
+}
