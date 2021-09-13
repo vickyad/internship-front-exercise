@@ -62,6 +62,7 @@ html {
     color: var(--dark-grey);
     transition: color 0.3s;
     font-weight: 700;
+    transition: 0.2s;
 }
 
 .link:hover {
@@ -85,6 +86,7 @@ html {
     margin-bottom: 0.5rem;
     border: none;
     width: auto;
+    transition: 0.2s;
 }
 
 .search-input i {
@@ -96,7 +98,11 @@ html {
     border-color: var(--red);
 }
 
-.search-input input:hover::placeholder {
+.search-input input::placeholder {
+    transition: 0.2s;
+}
+
+.search-input:hover input::placeholder {
     color: var(--red);
 }
 
@@ -164,15 +170,37 @@ html {
     width: fit-content;
     font-weight: 800;
     color: var(--red);
+    transition: 0.3s;
+}
+
+.game-info__wishlist p {
+    padding-bottom: 0.5rem;
+    position: relative;
 }
 
 .game-info__wishlist i {
     font-size: 1.7rem;
-    padding: 0.8rem 0.5rem 0.8rem 0;
+    padding: 0.8rem 0.5rem 1.3rem 0;
 }
 
 .game-info__wishlist:hover {
     color: var(--dark-red);
+}
+
+.game-info__wishlist p:after {
+    content:"";
+    width: 100%;
+    height: 2px;
+    background-color: var(--dark-red);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.game-info__wishlist:hover p:after {
+    opacity: 1;
 }
 
 .game-info__game-price {
@@ -186,16 +214,31 @@ html {
 }
 
 .game-info__game-price button {
-    background-color: var(--red);
+    background-color: transparent;
+    padding: 1.2rem;
     color: var(--white);
     font-size: 1.4rem;
     font-weight: 600;
-    padding: 1.2rem;
     border: none;
-    border-radius: 0.5rem;
+    position: relative;
+    align-self: center;
 }
 
-.game-info__game-price button:hover {
+.game-info__game-price button:after {
+    border-radius: 0.5rem;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--red);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-out;
+}
+
+.game-info__game-price button:hover:after {
+    animation: button-hover-animation 0.5s forwards;
     background-color: var(--dark-red);
 }
 
@@ -208,21 +251,52 @@ html {
     width: 100%;
 }
 
-.game-info__game-price__buy-game div {
+.game-info__game-price__buy-game__points-info {
     display: flex;
     align-items: center;
     padding: 1rem 0;
 }
 
-.game-info__game-price__buy-game div p {
+.game-info__game-price__buy-game__points-info p {
     padding-bottom: 0.5rem;
+    position: relative;
 }
 
-.game-info__game-price__buy-game div img {
+.game-info__game-price__buy-game__points-info img {
     margin-right: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
-.game-info__game-price__buy-game div p:hover {
-    border-bottom: 2px solid var(--dark-grey);
+.game-info__game-price__buy-game__points-info p:after {
+    content:"";
+    width: 100%;
+    height: 2px;
+    background-color: var(--dark-grey);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.game-info__game-price__buy-game__points-info p:hover:after {
+    opacity: 1;
+}
+
+@keyframes button-hover-animation {
+    50% {
+        width: 104%;
+        height: 110%;
+        transform: translate(-2%, -5%);
+    }
+    75% {
+        width: 102%;
+        height: 106%;
+        transform: translate(-1%, -3%);
+    }
+    100% {
+        width: 104%;
+        height: 110%;
+        transform: translate(-2%, -5%);
+    }
 }
