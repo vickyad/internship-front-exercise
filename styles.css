@@ -3,6 +3,7 @@
     --light-grey: #efefef;
     --dark-grey: #434242;
     --red: #e60012;
+    --dark-red: #ac000d;
     --light-blue: #d6f0fa;
     --dark-blue: #0b2b6b;
 }
@@ -130,4 +131,98 @@ html {
     margin-top: auto;
     margin-bottom: 7.5rem;
     margin-left: 1.5rem;
+}
+
+.game-info {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 30%;
+}
+
+.game-info__console {
+    width: fit-content;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--red);
+}
+
+.game-info__title {
+    padding: 1rem 0;
+}
+
+.game-info__title h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+}
+
+.game-info__title p {
+    font-size: 1.15rem;
+}
+
+.game-info__wishlist {
+    width: fit-content;
+    font-weight: 800;
+    color: var(--red);
+}
+
+.game-info__wishlist i {
+    font-size: 1.7rem;
+    padding: 0.8rem 0.5rem 0.8rem 0;
+}
+
+.game-info__wishlist:hover {
+    color: var(--dark-red);
+}
+
+.game-info__game-price {
+    padding-top: 2.5rem;
+    display: flex;
+}
+
+.game-info__game-price__price {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.game-info__game-price button {
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.game-info__game-price button:hover {
+    background-color: var(--dark-red);
+}
+
+.game-info__game-price button .go-right-icon {
+    margin-left: 6.2rem;
+}
+
+.game-info__game-price__buy-game {
+    margin-left: 1rem;
+    width: 100%;
+}
+
+.game-info__game-price__buy-game div {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.game-info__game-price__buy-game div p {
+    padding-bottom: 0.5rem;
+}
+
+.game-info__game-price__buy-game div img {
+    margin-right: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.game-info__game-price__buy-game div p:hover {
+    border-bottom: 2px solid var(--dark-grey);
 }
