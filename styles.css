@@ -322,6 +322,10 @@ html {
     padding: 3rem 0;
 }
 
+.footer a {
+    color: var(--light-grey);
+}
+
 .footer_top {
     display: flex;
     align-items: center;
@@ -343,7 +347,6 @@ html {
     font-weight: 600;
     margin-bottom: auto;
 }
-
 
 .footer__links__contact_n_feedback a:hover {
     cursor: pointer;
@@ -394,6 +397,10 @@ html {
 
 .footer__copyright span {
     padding: 0.4rem;
+}
+
+.footer__copyright__support:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 1252px) {
