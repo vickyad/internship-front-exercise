@@ -67,6 +67,16 @@ html {
     opacity: 1;
 }
 
+/* Heart */
+.heart-icon {
+    font-size: 1.7rem;
+    color: var(--red);
+    transition: color 0.2s;
+}
+
+.heart-icon:hover {
+    color: var(--dark-red);
+}
 
 /* Button */
 .button {
@@ -313,10 +323,115 @@ html {
     padding-bottom: 0.5rem;
 }
 
+/* ===// Customers also viewed section //=== */
+.customers-also-viewed h2 {
+    font-size: 2rem;
+    margin: 0 auto 2.1rem auto;
+    max-width: 1180px;
+    width: 96%;
+}
+
+.game-title-wrapper {
+    position: relative;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.game-title-wrapper:before,
+.game-title-wrapper:after {
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
+    height: 100%;
+    width: 4rem;
+    opacity: 0.7;
+    top: 0;
+    position: absolute;
+    font-size: 3rem;
+    visibility: hidden;
+}
+
+.game-title-wrapper:before {
+    text-align: right;
+    border-radius: 0 0.3rem 0.3rem 0;
+    content: '<';
+    left: 0;
+}
+
+.game-title-wrapper:after {
+    border-radius: 0.3rem 0 0 0.3rem;
+    content: '>';
+    right: 0;
+}
+
+.game-title-wrapper:hover:before,
+.game-title-wrapper:hover:after {
+    visibility: visible;
+}
+
+.game-title {
+    min-width: 17%;
+    margin: 0 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1rem;
+}
+
+.game-title__img-overlay {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+.game-title__img-overlay span {
+    background-color: #434242;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 0.5rem;
+}
+
+.game-title__img-overlay:hover span {
+    opacity: 0.4;
+}
+
+.game-title__img-overlay img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.game-title__extra-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-title__date {
+    font-size: 1.15rem;
+}
+
+.game-title__title,
+.game-title__price {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1430px) {
+    .game-title {
+        min-width: 20%;
+    }
+}
+
+
 @media (max-width: 1252px) {
     .game-seal {
         margin-left: -80px;
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1018px) {
+    .game-title {
+        min-width: 26%;
     }
 }
 
@@ -396,5 +511,11 @@ html {
     .game-info__game-price__buy-game button {
         width: 100%;
         align-self: flex-start;
+    }
+}
+
+@media (max-width: 754px) {
+    .game-title {
+        min-width: 38%;
     }
 }
