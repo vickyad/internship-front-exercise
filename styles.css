@@ -23,6 +23,10 @@ html {
     font-size: 14px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .center-flex {
     align-items: center;
     display: flex;
@@ -143,6 +147,7 @@ html {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    z-index: 10;
 }
 
 .top-header-fixed {
@@ -229,6 +234,106 @@ html {
     padding: 0 1rem;
 }
 
+.hamburguer-menu {
+    display: none;
+    width: 40px;
+    height: 24px;
+    position: relative;
+}
+
+.hamburguer-menu input[type="checkbox"] {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin: 0 1rem;
+}
+
+.hamburguer-menu .hamburguer-menu__line {
+    position: absolute;
+    left: 25%;
+    height: 4px;
+    width: 20px;
+    margin: 2px 0;
+    background-color: var(--dark-grey);
+    transition: 0.3s;
+}
+
+.hamburguer-menu .hamburguer-menu__line:nth-last-child(2) {
+    top: 1px;
+}
+
+.hamburguer-menu .hamburguer-menu__line:nth-last-child(3) {
+    top: 8px;
+}
+
+.hamburguer-menu .hamburguer-menu__line:nth-last-child(4) {
+    top: 15px;
+}
+
+.hamburguer-menu input[type="checkbox"]:checked ~ .hamburguer-menu__line:nth-last-child(2) {
+    transform: rotate(45deg);
+    width: 22px;
+    transform-origin: left top;
+}
+
+.hamburguer-menu input[type="checkbox"]:checked ~ .hamburguer-menu__line:nth-last-child(3) {
+    opacity: 0;
+}
+
+.hamburguer-menu input[type="checkbox"]:checked ~ .hamburguer-menu__line:nth-last-child(4) {
+    transform: rotate(-45deg);
+    width: 22px;
+    transform-origin: left bottom;
+}
+
+.menu-dialog {
+    height: 100vh;
+    min-width: 300px;
+    width: 40vw;
+    background-color: var(--light-grey);
+    position: fixed;
+    top: 56px;
+    right: -0.5rem;
+    display: none;
+    padding: 1rem;
+    z-index: 2;
+}
+
+.hamburguer-menu input[type="checkbox"]:checked ~ .menu-dialog {
+    display: block;
+}
+
+.menu-dialog nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-dialog nav a {
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-dialog nav a i {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+}
+
+.menu-dialog nav a i.fa-chevron-down {
+    margin-left: auto;
+}
+
+.menu-dialog hr {
+    border-width: 1px;
+    border-style: inset;
+    width: 80%;
+    margin: 2rem 0;
+    margin-left: 10%;
+    opacity: 0.3;
+}
 
 /* ===// Game info //=== */
 /* Game banner */
@@ -579,6 +684,13 @@ html {
 }
 
 @media (max-width: 768px) {
+    .top-header {
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
+        background-color: var(--white);
+    }
+
     .header-nav {
         min-width: 130px;
     }
@@ -593,6 +705,10 @@ html {
 
     .movable {
         display: none;
+    }
+
+    .hamburguer-menu {
+        display: block;
     }
 
     .game-banner {
