@@ -67,15 +67,19 @@ html {
     opacity: 1;
 }
 
-/* Heart */
-.heart-icon {
+/* Heart icon to wishlist */
+.add-to-wishlist-icon i {
     font-size: 1.7rem;
     color: var(--red);
     transition: color 0.2s;
 }
 
-.heart-icon:hover {
+.add-to-wishlist-icon i:hover {
     color: var(--dark-red);
+}
+
+.add-to-wishlist-icon:hover {
+    cursor: pointer;
 }
 
 /* Button */
@@ -290,6 +294,10 @@ html {
     color: var(--dark-red);
 }
 
+.game-info__wishlist:hover i {
+    color: var(--dark-red);
+}
+
 .game-info__wishlist .link-underline:after {
     background-color: var(--dark-red);
 }
@@ -332,13 +340,16 @@ html {
 }
 
 .game-title-wrapper {
-    position: relative;
     display: flex;
     overflow-x: hidden;
 }
 
-.game-title-wrapper:before,
-.game-title-wrapper:after {
+.customer-also-viewed__carrosel {
+    position: relative;
+}
+
+.go-left-tab,
+.go-right-tab {
     background-color: var(--dark-grey);
     color: var(--light-grey);
     height: 100%;
@@ -346,26 +357,30 @@ html {
     opacity: 0.7;
     top: 0;
     position: absolute;
-    font-size: 3rem;
+    font-size: 2.5rem;
     visibility: hidden;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    z-index: 10;
 }
 
-.game-title-wrapper:before {
+.go-left-tab {
     text-align: right;
     border-radius: 0 0.3rem 0.3rem 0;
-    content: '<';
     left: 0;
 }
 
-.game-title-wrapper:after {
+.go-right-tab {
+    text-align: left;
     border-radius: 0.3rem 0 0 0.3rem;
-    content: '>';
     right: 0;
 }
 
-.game-title-wrapper:hover:before,
-.game-title-wrapper:hover:after {
+.customer-also-viewed__carrosel:hover .go-left-tab,
+.customer-also-viewed__carrosel:hover .go-right-tab {
     visibility: visible;
+    cursor: pointer;
 }
 
 .game-title {
@@ -393,11 +408,13 @@ html {
 
 .game-title__img-overlay:hover span {
     opacity: 0.4;
+    cursor: pointer;
 }
 
 .game-title__img-overlay img {
     width: 100%;
     border-radius: 0.5rem;
+    display: block;
 }
 
 .game-title__extra-info {
@@ -411,8 +428,13 @@ html {
 
 .game-title__title,
 .game-title__price {
-    font-weight: 600;
+    color: var(--dark-grey);
+    font-weight: 700;
     font-size: 1.5rem;
+}
+
+.game-title__title:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 1430px) {
