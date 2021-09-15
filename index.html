@@ -14,79 +14,83 @@
     <title>Stardew Valley for Nintendo Switch - Nintendo Game Details</title>
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
+        <!-- Top header: logo + search bar + top icons + lateral dialog (for mobile)-->
         <div class="top-header">
-            <div class="top-header-fixed">
-                <a class="nintendo-logo center-flex" href="https://www.nintendo.com/">
-                    <img src="assets/nintendo_logo.png">
-                </a>
-                <div class="search-input">
-                    <i class="fas fa-search search-icon"></i>
-                    <form>
-                        <input placeholder="Search games, systems, support, etc." size="40" type="text">
-                    </form>
-                </div>
+            <a class="nintendo-logo center-flex" href="https://www.nintendo.com/">
+                <img alt="Nintendo home page" src="assets/nintendo_logo.png">
+            </a>
+            <div class="search-input">
+                <i class="fas fa-search search-icon"></i>
+                <form>
+                    <input placeholder="Search games, systems, support, etc." size="40" type="text">
+                </form>
             </div>
             <nav class="header-nav">
-                <a class="link-color movable" href="http://support.nintendo.com/nin-nav-en/home">
+                <!-- Icons displayed only in desktop version -->
+                <a class="link-color desktop-visible" href="http://support.nintendo.com/nin-nav-en/home">
                     <i class="fas fa-question-circle"></i>
                     <span>Support</span>
                 </a>
-                <a class="link-color movable" href="https://www.nintendo.com/wish-list/">
+                <a class="link-color desktop-visible" href="https://www.nintendo.com/wish-list/">
                     <i class="fas fa-heart"></i>
                     <span>Wish List</span>
                 </a>
+                <!-- Fixed icon -->
                 <a class="link-color" href="https://accounts.nintendo.com/authorize_guide?type=mixed&redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Db249727938e37d26dcb5da32767f16c3%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com" target="_blank">
                     <i class="fas fa-user"></i>
                     <span>Log in / Sign up</span>
                 </a>
-                <div class="hamburguer-menu-wrapper">
-                    <div class="hamburguer-menu">
-                        <input type="checkbox" onclick="console.log('oi')">
-                        <span class="hamburguer-menu__line"></span>
-                        <span class="hamburguer-menu__line"></span>
-                        <span class="hamburguer-menu__line"></span>    
-                        <div class="menu-dialog">
-                            <nav>
-                                <a class="link-color">
-                                    <i class="fas fa-search search-icon"></i>
-                                    <span>Search</span>
-                                </a>
-                                <a class="link-color">
-                                    <i class="fas fa-dice-d20"></i>
-                                    <span>Games</span>
-                                    <i class="fas fa-chevron-down"></i>
-                                </a>
-                                <a class="link-color">
-                                    <i class="fas fa-gamepad"></i>
-                                    <span>Hardware</span>
-                                    <i class="fas fa-chevron-down"></i>
-                                </a>
-                                <a class="link-color" href="https://www.nintendo.com/whatsnew/">
-                                    <i class="fas fa-comment-alt"></i>
-                                    <span>News & Events</span>
-                                </a>
-                                <a class="link-color" href="https://play.nintendo.com/">
-                                    <i class="fas fa-star"></i>
-                                    <span>Play Nintendo</span>
-                                </a>
-                            </nav>
-                            <hr>
-                            <nav>
-                                <a class="link-color" href="https://www.nintendo.com/wish-list/">
-                                    <i class="fas fa-heart"></i>
-                                    <span>Wish List</span>
-                                </a>
-                                <a class="link-color" href="http://support.nintendo.com/nin-nav-en/home">
-                                    <i class="fas fa-question-circle"></i>
-                                    <span>Support</span>
-                                </a>
-                            </nav>
-                        </div>
+                <!-- Hamburguer menu (mobile version) -->
+                <div class="hamburguer-menu">
+                    <!-- Hamburguer icon -->
+                    <input type="checkbox" onclick="console.log('oi')">
+                    <span class="hamburguer-menu__line"></span>
+                    <span class="hamburguer-menu__line"></span>
+                    <span class="hamburguer-menu__line"></span>
+                    <!-- Menu dialog -->    
+                    <div class="menu-dialog">
+                        <nav>
+                            <a class="link-color">
+                                <i class="fas fa-search search-icon"></i>
+                                <span>Search</span>
+                            </a>
+                            <a class="link-color">
+                                <i class="fas fa-dice-d20"></i>
+                                <span>Games</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <a class="link-color">
+                                <i class="fas fa-gamepad"></i>
+                                <span>Hardware</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <a class="link-color" href="https://www.nintendo.com/whatsnew/">
+                                <i class="fas fa-comment-alt"></i>
+                                <span>News & Events</span>
+                            </a>
+                            <a class="link-color" href="https://play.nintendo.com/">
+                                <i class="fas fa-star"></i>
+                                <span>Play Nintendo</span>
+                            </a>
+                        </nav>
+                        <hr>
+                        <nav>
+                            <a class="link-color" href="https://www.nintendo.com/wish-list/">
+                                <i class="fas fa-heart"></i>
+                                <span>Wish List</span>
+                            </a>
+                            <a class="link-color" href="http://support.nintendo.com/nin-nav-en/home">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Support</span>
+                            </a>
+                        </nav>
                     </div>
                 </div>
             </nav>
         </div>
+        <!-- Bottom header: bottom icons -->
         <nav class="bottom-header center-flex">
             <a class="link-color center-flex">
                 <i class="fas fa-dice-d20"></i>
@@ -108,13 +112,16 @@
             </a>
         </nav>
     </header>
+    <!-- Main area -->
     <main>
+        <!-- Game banner + ESRB seal (for desktop only )-->
         <section class="game-banner center-flex">
-            <img alt="Stardew Valley Banner" class="game-banner-img" height="613" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,h_613,q_auto,w_1089/ncom/en_US/games/switch/s/stardew-valley-switch/hero?v=2021082619">
-            <img alt="Entertainment Software Rating Board seal. Rating score e10" class="game-seal" height="90" src="https://code.nintendo.com/web-components/esrb-rating/assets/en-e10.svg" width="60">
+            <img alt="Stardew Valley banner" class="game-banner__img" height="613" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,h_613,q_auto,w_1089/ncom/en_US/games/switch/s/stardew-valley-switch/hero?v=2021082619">
+            <img alt="Entertainment Software Rating Board seal. Rating score e10" class="game-banner__game-seal" height="90" src="https://code.nintendo.com/web-components/esrb-rating/assets/en-e10.svg" width="60">
         </section>
-        <section class="info-box">
-            <span class="game-info__console">Nintendo Switch</span>
+        <!-- Game main info -->
+        <section class="main-game-info-wrapper">
+            <span class="game-console">Nintendo Switch</span>
             <div class="game-info">
                 <section>
                     <div class="game-info__title">
@@ -126,35 +133,40 @@
                         <span class="link-underline">Add to Wish List</span>
                     </a>
                 </section>
-                <section class="game-info__game-price">
-                    <p class="game-info__game-price__price">$14.99</p>
-                    <div class="game-info__game-price__buy-game">
+                <section class="game-info__actions">
+                    <p class="price">$14.99</p>
+                    <div class="buy-game">
                         <button class="button">
                             <span>Buy digital</span>
                             <i class="fas fa-chevron-right go-right-icon"></i>
                         </button>
-                        <div class="game-info__game-price__buy-game__points-info">
-                            <img src="assets/money.png">
+                        <div class="buy-game__points-info">
+                            <img alt="" src="assets/money.png">
                             <a class="link-underline">Eligible for up to 75 points</a>
                         </div>
                     </div>
                 </section>
             </div>
         </section>
+        <hr class="content-hr">
+        <!-- Customers also viewed -->
         <section class="customers-also-viewed">
             <h2>Customers who viewed this game also viewed</h2>
+            <!-- Carousel -->
             <div class="customer-also-viewed__carrosel">
+                <!-- Navigation tabs -->
                 <div class="go-left-tab">
                     <i class="fas fa-chevron-left"></i>
                 </div>
                 <div class="go-right-tab">
                     <i class="fas fa-chevron-right"></i>
                 </div>
+                <!-- Game titles list-->
                 <ul class="game-title-wrapper">
                     <li class="game-title">
                         <a class="game-title__img-overlay" href="https://www.nintendo.com/games/detail/ninjala-switch/">
                             <span></span>
-                            <img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/n/ninjala-switch/hero0908">
+                            <img alt="Ninjala banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/n/ninjala-switch/hero0908">
                         </a>
                         <p class="game-title__date">06/24/20</p>
                         <a href="https://www.nintendo.com/games/detail/ninjala-switch/">
@@ -171,7 +183,7 @@
                     <li class="game-title">
                         <a class="game-title__img-overlay" href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/">
                             <span></span>
-                            <img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/p/pokemon-brilliant-diamond-switch/hero">
+                            <img alt="Pokémon Brilliant Diamond banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/p/pokemon-brilliant-diamond-switch/hero">
                         </a>
                         <p class="game-title__date">11/19/21</p>
                         <a href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/">
@@ -188,7 +200,7 @@
                     <li class="game-title">
                         <a class="game-title__img-overlay" href="https://www.nintendo.com/games/detail/the-legend-of-zelda-skyward-sword-hd-switch/">
                             <span></span>
-                            <img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/t/the-legend-of-zelda-skyward-sword-hd-switch/hero">
+                            <img alt="The Legend of Zelda: Skyward Sword banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/t/the-legend-of-zelda-skyward-sword-hd-switch/hero">
                         </a>
                         <p class="game-title__date">07/16/21</p>
                         <a href="https://www.nintendo.com/games/detail/the-legend-of-zelda-skyward-sword-hd-switch/">
@@ -205,7 +217,7 @@
                     <li class="game-title">
                         <a class="game-title__img-overlay" href="https://www.nintendo.com/games/detail/animal-crossing-new-horizons-switch/">
                             <span></span>
-                            <img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/a/animal-crossing-new-horizons-switch/hero">
+                            <img alt="Animal Crossing: New Horizons banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/a/animal-crossing-new-horizons-switch/hero">
                         </a>
                         <p class="game-title__date">03/20/20</p>
                         <a href="https://www.nintendo.com/games/detail/animal-crossing-new-horizons-switch/">
@@ -222,7 +234,7 @@
                     <li class="game-title">
                         <a class="game-title__img-overlay" href="https://www.nintendo.com/games/detail/minecraft-switch/">
                             <span></span>
-                            <img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/m/minecraft-switch/hero">
+                            <img alt="Minecraft banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/m/minecraft-switch/hero">
                         </a>
                         <p class="game-title__date">06/20/18</p>
                         <a href="https://www.nintendo.com/games/detail/minecraft-switch/">
@@ -239,7 +251,7 @@
                     <li class="game-title">
                         <a class="game-title__img-overlay" href="https://www.nintendo.com/games/detail/ninjala-switch/">
                             <span></span>
-                            <img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/n/ninjala-switch/hero0908">
+                            <img alt="Ninjala banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/n/ninjala-switch/hero0908">
                         </a>
                         <p class="game-title__date">06/24/20</p>
                         <a href="https://www.nintendo.com/games/detail/ninjala-switch/">
@@ -256,7 +268,7 @@
                     <li class="game-title">
                         <a class="game-title__img-overlay" href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/">
                             <span></span>
-                            <img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/p/pokemon-brilliant-diamond-switch/hero">
+                            <img alt="Pokémon Brillant Switch banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/p/pokemon-brilliant-diamond-switch/hero">
                         </a>
                         <p class="game-title__date">11/19/21</p>
                         <a href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/">
@@ -273,7 +285,7 @@
                     <li class="game-title">
                         <a class="game-title__img-overlay" href="https://www.nintendo.com/games/detail/the-legend-of-zelda-skyward-sword-hd-switch/">
                             <span></span>
-                            <img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/t/the-legend-of-zelda-skyward-sword-hd-switch/hero">
+                            <img alt="The Legend of Zelda: Skyward Sword banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/t/the-legend-of-zelda-skyward-sword-hd-switch/hero">
                         </a>
                         <p class="game-title__date">07/16/21</p>
                         <a href="https://www.nintendo.com/games/detail/the-legend-of-zelda-skyward-sword-hd-switch/">
@@ -290,7 +302,7 @@
                     <li class="game-title">
                         <a class="game-title__img-overlay" href="https://www.nintendo.com/games/detail/animal-crossing-new-horizons-switch/">
                             <span></span>
-                            <img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/a/animal-crossing-new-horizons-switch/hero">
+                            <img alt="Animal Crossing: New Horizons banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/a/animal-crossing-new-horizons-switch/hero">
                         </a>
                         <p class="game-title__date">03/20/20</p>
                         <a href="https://www.nintendo.com/games/detail/animal-crossing-new-horizons-switch/">
@@ -307,7 +319,7 @@
                     <li class="game-title">
                         <a class="game-title__img-overlay" href="https://www.nintendo.com/games/detail/minecraft-switch/">
                             <span></span>
-                            <img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/m/minecraft-switch/hero">
+                            <img alt="Minecraft banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/m/minecraft-switch/hero">
                         </a>
                         <p class="game-title__date">06/20/18</p>
                         <a href="https://www.nintendo.com/games/detail/minecraft-switch/">
@@ -324,7 +336,7 @@
                     <li class="game-title">
                         <a class="game-title__img-overlay" href="https://www.nintendo.com/games/detail/ninjala-switch/">
                             <span></span>
-                            <img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/n/ninjala-switch/hero0908">
+                            <img alt="Ninjala banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/n/ninjala-switch/hero0908">
                         </a>
                         <p class="game-title__date">06/24/20</p>
                         <a href="https://www.nintendo.com/games/detail/ninjala-switch/">
@@ -341,7 +353,7 @@
                     <li class="game-title">
                         <a class="game-title__img-overlay" href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/">
                             <span></span>
-                            <img src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/p/pokemon-brilliant-diamond-switch/hero">
+                            <img alt="Pokémon Brilliant Diamond banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/p/pokemon-brilliant-diamond-switch/hero">
                         </a>
                         <p class="game-title__date">11/19/21</p>
                         <a href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/">
@@ -358,10 +370,13 @@
                 </ul>
             </div>
         </section>
-    </main>  
+        <hr class="content-hr">
+    </main>
+    <!-- Footer area -->  
     <footer class="footer">
+        <!-- Contact us and Feedback + Social Media + Privacy seal -->
         <div class="footer_top">
-            <div class="footer__links">
+            <section class="footer__links">
                 <nav class="footer__links__contact_n_feedback">
                     <a href="https://www.nintendo.com/about/">
                         Contact Us
@@ -392,11 +407,12 @@
                         </div>
                     </a>
                 </nav>
-            </div>
+            </section>
             <a class="footer__links__privacy_seal" href="https://www.esrb.org/EPCConfirm/891/" target="_blank">
                 <img alt="privacy certified global seal" src="assets/privacy-certified-global-seal.svg" height="81">
             </a>
         </div>
+        <!-- Copyright message -->
         <div class="footer__copyright">
             <span>
                 © 2021 Nintendo. Games are property of their respective owners.
