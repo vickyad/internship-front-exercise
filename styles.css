@@ -7,6 +7,10 @@
     --light-grey: #efefef;
     --red: #e60012;
     --white: #fff;
+    --fb-background: #1878f2;
+    --ig-background: #d32c69;
+    --tt-background: #1da1f2;
+    --yt-background: #ff0200;
 }
 
 * {
@@ -33,6 +37,15 @@ body {
     justify-content: center;
 }
 
+/* Horizontal line */
+.content-hr {
+    border-style: inset;
+    border-width: 1px;
+    margin: 5rem auto;
+    max-width: 1180px;
+    opacity: 0.4;
+    width: 96%;
+}
 
 /* Links */
 .link-color {
@@ -145,13 +158,8 @@ body {
 .top-header {
     border-bottom: 1px solid var(--light-grey);
     display: flex;
-    justify-content: space-between;
     width: 100%;
     z-index: 10;
-}
-
-.top-header-fixed {
-    display: flex;
 }
 
 .top-header .nintendo-logo {
@@ -168,8 +176,9 @@ body {
     align-items: center;
     display: flex;
     justify-content: right;
-    padding: 0.5rem;
+    margin-left: auto;
     min-width: 350px;
+    padding: 0.5rem;
 }
 
 .header-nav a {
@@ -342,18 +351,18 @@ body {
     padding: 2.5rem;
 }
 
-.game-banner-img {
+.game-banner__img {
     max-width: 1089px;
     height: auto;
     width: 95%;
 }
 
-.game-seal {
+.game-banner__game-seal {
     margin: auto 0 7.5rem 1.5rem;
 }
 
 /* Game general info */
-.info-box {
+.main-game-info-wrapper {
     margin: 0 auto;
     max-width: 1180px;
     width: 96%;
@@ -364,7 +373,7 @@ body {
     justify-content: space-between;
 }
 
-.game-info__console {
+.game-console {
     border-bottom: 2px solid var(--red);
     padding-bottom: 0.4rem;
     width: fit-content;
@@ -407,31 +416,31 @@ body {
     background-color: var(--dark-red);
 }
 
-.game-info__game-price {
+.game-info__actions {
     display: flex;
 }
 
-.game-info__game-price__price {
+.game-info__actions .price {
     font-size: 2rem;
     font-weight: 700;
 }
 
-.game-info__game-price__buy-game {
+.game-info__actions .buy-game {
     margin-left: 1rem;
     width: 100%;
 }
 
-.game-info__game-price__buy-game button {
+.game-info__actions .buy-game button {
     width: 238px;
 }
 
-.game-info__game-price__buy-game__points-info {
+.game-info__actions .buy-game__points-info {
     align-items: center;
     display: flex;
     padding: 1rem 0;
 }
 
-.game-info__game-price__buy-game__points-info img {
+.game-info__actions .buy-game__points-info img {
     margin-right: 0.5rem;
     padding-bottom: 0.5rem;
 }
@@ -503,7 +512,7 @@ body {
 }
 
 .game-title__img-overlay span {
-    background-color: #434242;
+    background-color: var(--dark-grey);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -541,13 +550,6 @@ body {
 .game-title__title:hover {
     cursor: pointer;
 }
-
-@media (max-width: 1430px) {
-    .game-title {
-        min-width: 20%;
-    }
-}
-
 
 
 /* ===// Footer //=== */
@@ -606,19 +608,19 @@ body {
 }
 
 .footer__links__social_media .social_media__fb{
-    background-color: #1878f2;
+    background-color: var(--fb-background);
 }
 
 .footer__links__social_media .social_media__ig{
-    background-color: #d32c69;
+    background-color: var(--ig-background);
 }
 
 .footer__links__social_media .social_media__tt{
-    background-color: #1da1f2;
+    background-color: var(--tt-background);
 }
 
 .footer__links__social_media .social_media__yt{
-    background-color: #ff0200;
+    background-color: var(--yt-background);
 }
 
 .footer__links__privacy_seal {
@@ -639,8 +641,14 @@ body {
     text-decoration: underline;
 }
 
+@media (max-width: 1430px) {
+    .game-title {
+        min-width: 20%;
+    }
+}
+
 @media (max-width: 1252px) {
-    .game-seal {
+    .game-banner__game-seal {
         margin-left: -80px;
         margin-bottom: 20px;
     }
@@ -656,39 +664,39 @@ body {
     .search-input {
         border: none;
     }
-
+    
     .search-input {
         width: 100px;
     }
 }
 
 @media (max-width: 904px) {
-    .game-info__game-price {
+    .game-info__actions {
         flex-direction: column;
         align-items: flex-end;
     }
 
-    .game-info__game-price__price {
+    .game-info__actions .price {
         margin-bottom: 1.5rem;
     }
 
-    .game-info__game-price__buy-game {
+    .game-info__actions .buy-game {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
     }
 
-    .game-info__game-price__buy-game button {
+    .game-info__actions .buy-game button {
         align-self: flex-end;
     }
 }
 
 @media (max-width: 768px) {
     .top-header {
-        position: fixed; /* Set the navbar to fixed position */
-        top: 0; /* Position the navbar at the top of the page */
-        width: 100%; /* Full width */
         background-color: var(--white);
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
 
     .header-nav {
@@ -703,7 +711,7 @@ body {
         display: none;
     }
 
-    .movable {
+    .desktop-visible {
         display: none;
     }
 
@@ -715,11 +723,11 @@ body {
         padding: 0 0 1rem 0;
     }
 
-    .game-banner-img {
+    .game-banner__img {
         width: 100%;
     }
 
-    .game-seal {
+    .game-banner__game-seal {
         display: none;
     }
 
@@ -727,16 +735,16 @@ body {
         flex-direction: column;
     }
 
-    .game-info__game-price {
+    .game-info__actions {
         align-items: flex-start;
     }
 
-    .game-info__game-price__buy-game {
+    .game-info__actions .buy-game {
         align-items: flex-start;
         margin: 0;
     }
 
-    .game-info__game-price__buy-game button {
+    .game-info__actions .buy-game button {
         width: 100%;
         align-self: flex-start;
     }

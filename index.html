@@ -18,24 +18,22 @@
     <header class="header">
         <!-- Top header: logo + search bar + top icons + lateral dialog (for mobile)-->
         <div class="top-header">
-            <div class="top-header-fixed">
-                <a class="nintendo-logo center-flex" href="https://www.nintendo.com/">
-                    <img alt="Nintendo home page" src="assets/nintendo_logo.png">
-                </a>
-                <div class="search-input">
-                    <i class="fas fa-search search-icon"></i>
-                    <form>
-                        <input placeholder="Search games, systems, support, etc." size="40" type="text">
-                    </form>
-                </div>
+            <a class="nintendo-logo center-flex" href="https://www.nintendo.com/">
+                <img alt="Nintendo home page" src="assets/nintendo_logo.png">
+            </a>
+            <div class="search-input">
+                <i class="fas fa-search search-icon"></i>
+                <form>
+                    <input placeholder="Search games, systems, support, etc." size="40" type="text">
+                </form>
             </div>
             <nav class="header-nav">
                 <!-- Icons displayed only in desktop version -->
-                <a class="link-color movable" href="http://support.nintendo.com/nin-nav-en/home">
+                <a class="link-color desktop-visible" href="http://support.nintendo.com/nin-nav-en/home">
                     <i class="fas fa-question-circle"></i>
                     <span>Support</span>
                 </a>
-                <a class="link-color movable" href="https://www.nintendo.com/wish-list/">
+                <a class="link-color desktop-visible" href="https://www.nintendo.com/wish-list/">
                     <i class="fas fa-heart"></i>
                     <span>Wish List</span>
                 </a>
@@ -45,51 +43,49 @@
                     <span>Log in / Sign up</span>
                 </a>
                 <!-- Hamburguer menu (mobile version) -->
-                <div class="hamburguer-menu-wrapper">
-                    <div class="hamburguer-menu">
-                        <!-- Hamburguer icon -->
-                        <input type="checkbox" onclick="console.log('oi')">
-                        <span class="hamburguer-menu__line"></span>
-                        <span class="hamburguer-menu__line"></span>
-                        <span class="hamburguer-menu__line"></span>
-                        <!-- Menu dialog -->    
-                        <div class="menu-dialog">
-                            <nav>
-                                <a class="link-color">
-                                    <i class="fas fa-search search-icon"></i>
-                                    <span>Search</span>
-                                </a>
-                                <a class="link-color">
-                                    <i class="fas fa-dice-d20"></i>
-                                    <span>Games</span>
-                                    <i class="fas fa-chevron-down"></i>
-                                </a>
-                                <a class="link-color">
-                                    <i class="fas fa-gamepad"></i>
-                                    <span>Hardware</span>
-                                    <i class="fas fa-chevron-down"></i>
-                                </a>
-                                <a class="link-color" href="https://www.nintendo.com/whatsnew/">
-                                    <i class="fas fa-comment-alt"></i>
-                                    <span>News & Events</span>
-                                </a>
-                                <a class="link-color" href="https://play.nintendo.com/">
-                                    <i class="fas fa-star"></i>
-                                    <span>Play Nintendo</span>
-                                </a>
-                            </nav>
-                            <hr>
-                            <nav>
-                                <a class="link-color" href="https://www.nintendo.com/wish-list/">
-                                    <i class="fas fa-heart"></i>
-                                    <span>Wish List</span>
-                                </a>
-                                <a class="link-color" href="http://support.nintendo.com/nin-nav-en/home">
-                                    <i class="fas fa-question-circle"></i>
-                                    <span>Support</span>
-                                </a>
-                            </nav>
-                        </div>
+                <div class="hamburguer-menu">
+                    <!-- Hamburguer icon -->
+                    <input type="checkbox" onclick="console.log('oi')">
+                    <span class="hamburguer-menu__line"></span>
+                    <span class="hamburguer-menu__line"></span>
+                    <span class="hamburguer-menu__line"></span>
+                    <!-- Menu dialog -->    
+                    <div class="menu-dialog">
+                        <nav>
+                            <a class="link-color">
+                                <i class="fas fa-search search-icon"></i>
+                                <span>Search</span>
+                            </a>
+                            <a class="link-color">
+                                <i class="fas fa-dice-d20"></i>
+                                <span>Games</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <a class="link-color">
+                                <i class="fas fa-gamepad"></i>
+                                <span>Hardware</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <a class="link-color" href="https://www.nintendo.com/whatsnew/">
+                                <i class="fas fa-comment-alt"></i>
+                                <span>News & Events</span>
+                            </a>
+                            <a class="link-color" href="https://play.nintendo.com/">
+                                <i class="fas fa-star"></i>
+                                <span>Play Nintendo</span>
+                            </a>
+                        </nav>
+                        <hr>
+                        <nav>
+                            <a class="link-color" href="https://www.nintendo.com/wish-list/">
+                                <i class="fas fa-heart"></i>
+                                <span>Wish List</span>
+                            </a>
+                            <a class="link-color" href="http://support.nintendo.com/nin-nav-en/home">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Support</span>
+                            </a>
+                        </nav>
                     </div>
                 </div>
             </nav>
@@ -120,12 +116,12 @@
     <main>
         <!-- Game banner + ESRB seal (for desktop only )-->
         <section class="game-banner center-flex">
-            <img alt="Stardew Valley banner" class="game-banner-img" height="613" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,h_613,q_auto,w_1089/ncom/en_US/games/switch/s/stardew-valley-switch/hero?v=2021082619">
-            <img alt="Entertainment Software Rating Board seal. Rating score e10" class="game-seal" height="90" src="https://code.nintendo.com/web-components/esrb-rating/assets/en-e10.svg" width="60">
+            <img alt="Stardew Valley banner" class="game-banner__img" height="613" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,h_613,q_auto,w_1089/ncom/en_US/games/switch/s/stardew-valley-switch/hero?v=2021082619">
+            <img alt="Entertainment Software Rating Board seal. Rating score e10" class="game-banner__game-seal" height="90" src="https://code.nintendo.com/web-components/esrb-rating/assets/en-e10.svg" width="60">
         </section>
         <!-- Game main info -->
-        <section class="info-box">
-            <span class="game-info__console">Nintendo Switch</span>
+        <section class="main-game-info-wrapper">
+            <span class="game-console">Nintendo Switch</span>
             <div class="game-info">
                 <section>
                     <div class="game-info__title">
@@ -137,14 +133,14 @@
                         <span class="link-underline">Add to Wish List</span>
                     </a>
                 </section>
-                <section class="game-info__game-price">
-                    <p class="game-info__game-price__price">$14.99</p>
-                    <div class="game-info__game-price__buy-game">
+                <section class="game-info__actions">
+                    <p class="price">$14.99</p>
+                    <div class="buy-game">
                         <button class="button">
                             <span>Buy digital</span>
                             <i class="fas fa-chevron-right go-right-icon"></i>
                         </button>
-                        <div class="game-info__game-price__buy-game__points-info">
+                        <div class="buy-game__points-info">
                             <img alt="" src="assets/money.png">
                             <a class="link-underline">Eligible for up to 75 points</a>
                         </div>
@@ -152,6 +148,7 @@
                 </section>
             </div>
         </section>
+        <hr class="content-hr">
         <!-- Customers also viewed -->
         <section class="customers-also-viewed">
             <h2>Customers who viewed this game also viewed</h2>
@@ -373,6 +370,7 @@
                 </ul>
             </div>
         </section>
+        <hr class="content-hr">
     </main>
     <!-- Footer area -->  
     <footer class="footer">
