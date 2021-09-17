@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="You're moving to the valley...">
-    <script src="https://kit.fontawesome.com/c0563bc619.js" crossorigin="anonymous"></script>
     <link rel="icon" href="assets/nintendo.ico">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
     <header class="header">
         <!-- Top header: logo + search bar + top icons + lateral dialog (for mobile)-->
         <div class="top-header">
-            <a class="nintendo-logo center-flex" href="https://www.nintendo.com/">
+            <a class="nintendo-logo center-flex" href="https://www.nintendo.com/" title="go to Nintendo Homepage">
                 <img alt="Nintendo home page" src="assets/nintendo_logo.png">
             </a>
             <div class="search-input">
@@ -29,64 +29,64 @@
             </div>
             <nav class="header-nav">
                 <!-- Icons displayed only in desktop version -->
-                <a class="link-color desktop-visible" href="http://support.nintendo.com/nin-nav-en/home">
+                <a class="link-color desktop-visible" href="http://support.nintendo.com/nin-nav-en/home" title="go to Support page">
                     <i class="fas fa-question-circle"></i>
                     <span>Support</span>
                 </a>
-                <a class="link-color desktop-visible" href="https://www.nintendo.com/wish-list/">
+                <a class="link-color desktop-visible" href="https://www.nintendo.com/wish-list/" title="go to Wishlist page">
                     <i class="fas fa-heart"></i>
                     <span>Wish List</span>
                 </a>
-                <!-- Fixed icon -->
-                <a class="link-color" href="https://accounts.nintendo.com/authorize_guide?type=mixed&redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Db249727938e37d26dcb5da32767f16c3%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com" target="_blank">
+                <!-- Icons displayed in all versions -->
+                <a class="link-color" href="https://accounts.nintendo.com/authorize_guide?type=mixed&redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Db249727938e37d26dcb5da32767f16c3%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com" target="_blank" title="external link: go to Log in/ Sign up page">
                     <i class="fas fa-user"></i>
                     <span>Log in / Sign up</span>
                 </a>
                 <!-- Hamburguer menu (mobile version) -->
                 <div class="hamburguer-menu">
                     <!-- Hamburguer icon -->
-                    <input type="checkbox" onclick="console.log('oi')">
-                    <span class="hamburguer-menu__line"></span>
-                    <span class="hamburguer-menu__line"></span>
-                    <span class="hamburguer-menu__line"></span>
+                    <input type="checkbox">
                     <!-- Menu dialog -->    
                     <div class="menu-dialog">
                         <nav>
-                            <a class="link-color">
+                            <a class="link-color" title="go to Search">
                                 <i class="fas fa-search search-icon"></i>
                                 <span>Search</span>
                             </a>
-                            <a class="link-color">
+                            <a class="link-color" title="go to Games">
                                 <i class="fas fa-dice-d20"></i>
                                 <span>Games</span>
                                 <i class="fas fa-chevron-down"></i>
                             </a>
-                            <a class="link-color">
+                            <a class="link-color" title="go to Hardware">
                                 <i class="fas fa-gamepad"></i>
                                 <span>Hardware</span>
                                 <i class="fas fa-chevron-down"></i>
                             </a>
-                            <a class="link-color" href="https://www.nintendo.com/whatsnew/">
+                            <a class="link-color" href="https://www.nintendo.com/whatsnew/" title="go to News & Events">
                                 <i class="fas fa-comment-alt"></i>
                                 <span>News & Events</span>
                             </a>
-                            <a class="link-color" href="https://play.nintendo.com/">
+                            <a class="link-color" href="https://play.nintendo.com/" title="go to Play Nintendo">
                                 <i class="fas fa-star"></i>
                                 <span>Play Nintendo</span>
                             </a>
                         </nav>
                         <hr>
                         <nav>
-                            <a class="link-color" href="https://www.nintendo.com/wish-list/">
+                            <a class="link-color" href="https://www.nintendo.com/wish-list/" title="go to Wish List">
                                 <i class="fas fa-heart"></i>
                                 <span>Wish List</span>
                             </a>
-                            <a class="link-color" href="http://support.nintendo.com/nin-nav-en/home">
+                            <a class="link-color" href="http://support.nintendo.com/nin-nav-en/home" title="go to Support">
                                 <i class="fas fa-question-circle"></i>
                                 <span>Support</span>
                             </a>
                         </nav>
                     </div>
+                    <span class="hamburguer-menu__line"></span>
+                    <span class="hamburguer-menu__line"></span>
+                    <span class="hamburguer-menu__line"></span>
                 </div>
             </nav>
         </div>
@@ -116,8 +116,8 @@
     <main>
         <!-- Game banner + ESRB seal (for desktop only )-->
         <section class="game-banner center-flex">
-            <img alt="Stardew Valley banner" class="game-banner__img" height="613" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,h_613,q_auto,w_1089/ncom/en_US/games/switch/s/stardew-valley-switch/hero?v=2021082619">
-            <img alt="Entertainment Software Rating Board seal. Rating score e10" class="game-banner__game-seal" height="90" src="https://code.nintendo.com/web-components/esrb-rating/assets/en-e10.svg" width="60">
+            <img alt="Stardew Valley banner" class="game-banner__img" height="613" src="assets/banner.png">
+            <img alt="Entertainment Software Rating Board seal. Rating score e10" class="game-banner__game-seal" height="90" src="assets/en-e10.svg" width="60">
         </section>
         <!-- Game main info -->
         <section class="main-game-info-wrapper">
@@ -148,6 +148,7 @@
                 </section>
             </div>
         </section>
+        <!-- Gallery -->
         <section class="game-gallery-wrapper">
             <ul class="game-gallery">
                 <li class="game-gallery__img-set">
@@ -155,32 +156,32 @@
                         <span>
                             <i class="fas fa-search-plus"></i>
                         </span>
-                        <img alt="game-screenshot" src="https://assets.nintendo.com/image/upload/c_limit,f_auto,q_auto,w_1920/ncom/en_US/games/switch/s/stardew-valley-switch/screenshot-gallery/screenshot01?v=2021091520">
+                        <img alt="game-screenshot" src="assets/screenshot/screenshot01.jpg">
                     </div>
 
                     <div class="img-overlay">
                         <span>
                             <i class="fas fa-search-plus"></i>
                         </span>
-                        <img alt="game-screenshot" src="https://assets.nintendo.com/image/upload/c_limit,f_auto,q_auto,w_1920/ncom/en_US/games/switch/s/stardew-valley-switch/screenshot-gallery/screenshot02?v=2021091520">
+                        <img alt="game-screenshot" src="assets/screenshot/screenshot02.jpg">
                     </div>
                     <div class="img-overlay">
                         <span>
                             <i class="fas fa-search-plus"></i>
                         </span>
-                        <img alt="game-screenshot" src="https://assets.nintendo.com/image/upload/c_limit,f_auto,q_auto,w_1920/ncom/en_US/games/switch/s/stardew-valley-switch/screenshot-gallery/screenshot04?v=2021091520">
+                        <img alt="game-screenshot" src="assets/screenshot/screenshot03.jpg">
                     </div>
                     <div class="img-overlay">
                         <span>
                             <i class="fas fa-search-plus"></i>
                         </span>
-                        <img alt="game-screenshot" src="https://assets.nintendo.com/image/upload/c_limit,f_auto,q_auto,w_1920/ncom/en_US/games/switch/s/stardew-valley-switch/screenshot-gallery/screenshot03?v=2021091520">
+                        <img alt="game-screenshot" src="assets/screenshot/screenshot04.jpg">
                     </div>
                     <div class="img-overlay">
                         <span>
                             <i class="fas fa-search-plus"></i>
                         </span>
-                        <img alt="game-screenshot" src="https://assets.nintendo.com/image/upload/c_limit,f_auto,q_auto,w_1920/ncom/en_US/games/switch/s/stardew-valley-switch/screenshot-gallery/screenshot05?v=2021091520">
+                        <img alt="game-screenshot" src="assets/screenshot/screenshot05.jpg">
                     </div>
                 </li>
                 <li class="game-gallery__img-set">
@@ -188,17 +189,21 @@
                         <span>
                             <i class="fas fa-search-plus"></i>
                         </span>
-                        <img alt="game-screenshot" src="https://assets.nintendo.com/image/upload/c_limit,f_auto,q_auto,w_1920/ncom/en_US/games/switch/s/stardew-valley-switch/screenshot-gallery/screenshot06?v=2021091520">
+                        <img alt="game-screenshot" src="assets/screenshot/screenshot06.jpg">
                     </div>
                 </li>
             </ul>
             <div class="game-gallery__controls">
-                <i class="fas fa-caret-left"></i>
+                <button>
+                    <i class="fas fa-caret-left"></i>
+                </button>
                 <div class="display">
                     <i class="fas fa-circle"></i>
                     <i class="far fa-circle"></i>
                 </div>
-                <i class="fas fa-caret-right"></i>
+                <button>
+                    <i class="fas fa-caret-right"></i>
+                </button>
             </div>
         </section>
         <hr class="content-hr">
@@ -208,214 +213,214 @@
             <!-- Carousel -->
             <div class="customer-also-viewed__carrosel">
                 <!-- Navigation tabs -->
-                <div class="go-left-tab">
+                <button class="go-left-tab">
                     <i class="fas fa-chevron-left"></i>
-                </div>
-                <div class="go-right-tab">
+                </button>
+                <button class="go-right-tab">
                     <i class="fas fa-chevron-right"></i>
-                </div>
+                </button>
                 <!-- Game titles list-->
                 <ul class="game-title-wrapper">
                     <li class="game-title">
-                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/ninjala-switch/">
+                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/ninjala-switch/" title="go to Ninjala game page">
                             <span></span>
-                            <img alt="Ninjala banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/n/ninjala-switch/hero0908">
+                            <img alt="Ninjala banner" src="assets/other_titles/ninjala.jpg">
                         </a>
                         <p class="game-title__date">06/24/20</p>
-                        <a href="https://www.nintendo.com/games/detail/ninjala-switch/">
+                        <a href="https://www.nintendo.com/games/detail/ninjala-switch/" title="go to Ninjala game page">
                             <h3 class="game-title__title">Ninjala</h3>
                         </a>
                         <p class="game-title__price">$0.00</p>
                         <div class="game-title__extra-info">
                             <span class="game-info__console">Nintendo Switch</span>
-                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank">
+                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank" title="go to Wishlist page">
                                 <i class="far fa-heart"></i>
                             </a>
                         </div>
                     </li>
                     <li class="game-title">
-                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/">
+                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/" title="go to Pokémon Brilliant Diamond game page">
                             <span></span>
-                            <img alt="Pokémon Brilliant Diamond banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/p/pokemon-brilliant-diamond-switch/hero">
+                            <img alt="Pokémon Brilliant Diamond banner" src="assets/other_titles/pokemon.jpg">
                         </a>
                         <p class="game-title__date">11/19/21</p>
-                        <a href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/">
+                        <a href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/" title="go to Pokémon Brilliant Diamond game page">
                             <h3 class="game-title__title">Pokémon™ Brilliant Diamond</h3>
                         </a>
                         <p class="game-title__price">$59.99</p>
                         <div class="game-title__extra-info">
                             <span class="game-info__console">Nintendo Switch</span>
-                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank">
+                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank" title="go to Wishlist page">
                                 <i class="far fa-heart"></i>
                             </a>
                         </div>
                     </li>
                     <li class="game-title">
-                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/the-legend-of-zelda-skyward-sword-hd-switch/">
+                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/the-legend-of-zelda-skyward-sword-hd-switch/" title="go to The Legend of Zelda: Skyward Sword game page">
                             <span></span>
-                            <img alt="The Legend of Zelda: Skyward Sword banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/t/the-legend-of-zelda-skyward-sword-hd-switch/hero">
+                            <img alt="The Legend of Zelda: Skyward Sword banner" src="assets/other_titles/zelda.jpg">
                         </a>
                         <p class="game-title__date">07/16/21</p>
-                        <a href="https://www.nintendo.com/games/detail/the-legend-of-zelda-skyward-sword-hd-switch/">
+                        <a href="https://www.nintendo.com/games/detail/the-legend-of-zelda-skyward-sword-hd-switch/" title="go to The Legend of Zelda: Skyward Sword game page">
                             <h3 class="game-title__title">The Legend of Zelda™: Skyward Sword HD</h3>
                         </a>
                         <p class="game-title__price">$59.99</p>
                         <div class="game-title__extra-info">
                             <span class="game-info__console">Nintendo Switch</span>
-                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank">
+                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank" title="go to Wishlist page">
                                 <i class="far fa-heart"></i>
                             </a>
                         </div>
                     </li>
                     <li class="game-title">
-                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/animal-crossing-new-horizons-switch/">
+                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/animal-crossing-new-horizons-switch/" title="go to Animal Crossing™: New Horizons game page">
                             <span></span>
-                            <img alt="Animal Crossing: New Horizons banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/a/animal-crossing-new-horizons-switch/hero">
+                            <img alt="Animal Crossing: New Horizons banner" src="assets/other_titles/animal_crossing.jpg">
                         </a>
                         <p class="game-title__date">03/20/20</p>
-                        <a href="https://www.nintendo.com/games/detail/animal-crossing-new-horizons-switch/">
+                        <a href="https://www.nintendo.com/games/detail/animal-crossing-new-horizons-switch/" title="go to Animal Crossing™: New Horizons game page">
                             <h3 class="game-title__title">Animal Crossing™: New Horizons</h3>
                         </a>
                         <p class="game-title__price">$59.99</p>
                         <div class="game-title__extra-info">
                             <span class="game-info__console">Nintendo Switch</span>
-                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank">
+                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank" title="go to Wishlist page">
                                 <i class="far fa-heart"></i>
                             </a>
                         </div>
                     </li>
                     <li class="game-title">
-                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/minecraft-switch/">
+                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/minecraft-switch/" title="go to Minecraft game page">
                             <span></span>
-                            <img alt="Minecraft banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/m/minecraft-switch/hero">
+                            <img alt="Minecraft banner" src="assets/other_titles/minecraft.jpg">
                         </a>
                         <p class="game-title__date">06/20/18</p>
-                        <a href="https://www.nintendo.com/games/detail/minecraft-switch/">
+                        <a href="https://www.nintendo.com/games/detail/minecraft-switch/" title="go to Minecraft game page">
                             <h3 class="game-title__title">Minecraft</h3>
                         </a>
                         <p class="game-title__price">$29.99</p>
                         <div class="game-title__extra-info">
                             <span class="game-info__console">Nintendo Switch</span>
-                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank">
+                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank" title="go to Wishlist page">
                                 <i class="far fa-heart"></i>
                             </a>
                         </div>
                     </li>
                     <li class="game-title">
-                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/ninjala-switch/">
+                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/ninjala-switch/" title="go to Ninjala game page">
                             <span></span>
-                            <img alt="Ninjala banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/n/ninjala-switch/hero0908">
+                            <img alt="Ninjala banner" src="assets/other_titles/ninjala.jpg">
                         </a>
                         <p class="game-title__date">06/24/20</p>
-                        <a href="https://www.nintendo.com/games/detail/ninjala-switch/">
+                        <a href="https://www.nintendo.com/games/detail/ninjala-switch/" title="go to Ninjala game page">
                             <h3 class="game-title__title">Ninjala</h3>
                         </a>
                         <p class="game-title__price">$0.00</p>
                         <div class="game-title__extra-info">
                             <span class="game-info__console">Nintendo Switch</span>
-                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank">
+                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank" title="go to Wishlist page">
                                 <i class="far fa-heart"></i>
                             </a>
                         </div>
                     </li>
                     <li class="game-title">
-                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/">
+                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/" title="go to Pokémon Brilliant Diamond game page">
                             <span></span>
-                            <img alt="Pokémon Brillant Switch banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/p/pokemon-brilliant-diamond-switch/hero">
+                            <img alt="Pokémon Brilliant Diamond banner" src="assets/other_titles/pokemon.jpg">
                         </a>
                         <p class="game-title__date">11/19/21</p>
-                        <a href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/">
+                        <a href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/" title="go to Pokémon Brilliant Diamond game page">
                             <h3 class="game-title__title">Pokémon™ Brilliant Diamond</h3>
                         </a>
                         <p class="game-title__price">$59.99</p>
                         <div class="game-title__extra-info">
                             <span class="game-info__console">Nintendo Switch</span>
-                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank">
+                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank" title="go to Wishlist page">
                                 <i class="far fa-heart"></i>
                             </a>
                         </div>
                     </li>
                     <li class="game-title">
-                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/the-legend-of-zelda-skyward-sword-hd-switch/">
+                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/the-legend-of-zelda-skyward-sword-hd-switch/" title="go to The Legend of Zelda: Skyward Sword game page">
                             <span></span>
-                            <img alt="The Legend of Zelda: Skyward Sword banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/t/the-legend-of-zelda-skyward-sword-hd-switch/hero">
+                            <img alt="The Legend of Zelda: Skyward Sword banner" src="assets/other_titles/zelda.jpg">
                         </a>
                         <p class="game-title__date">07/16/21</p>
-                        <a href="https://www.nintendo.com/games/detail/the-legend-of-zelda-skyward-sword-hd-switch/">
+                        <a href="https://www.nintendo.com/games/detail/the-legend-of-zelda-skyward-sword-hd-switch/" title="go to The Legend of Zelda: Skyward Sword game page">
                             <h3 class="game-title__title">The Legend of Zelda™: Skyward Sword HD</h3>
                         </a>
                         <p class="game-title__price">$59.99</p>
                         <div class="game-title__extra-info">
                             <span class="game-info__console">Nintendo Switch</span>
-                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank">
+                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank" title="go to Wishlist page">
                                 <i class="far fa-heart"></i>
                             </a>
                         </div>
                     </li>
                     <li class="game-title">
-                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/animal-crossing-new-horizons-switch/">
+                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/animal-crossing-new-horizons-switch/" title="go to Animal Crossing™: New Horizons game page">
                             <span></span>
-                            <img alt="Animal Crossing: New Horizons banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/a/animal-crossing-new-horizons-switch/hero">
+                            <img alt="Animal Crossing: New Horizons banner" src="assets/other_titles/animal_crossing.jpg">
                         </a>
                         <p class="game-title__date">03/20/20</p>
-                        <a href="https://www.nintendo.com/games/detail/animal-crossing-new-horizons-switch/">
+                        <a href="https://www.nintendo.com/games/detail/animal-crossing-new-horizons-switch/" title="go to Animal Crossing™: New Horizons game page">
                             <h3 class="game-title__title">Animal Crossing™: New Horizons</h3>
                         </a>
                         <p class="game-title__price">$59.99</p>
                         <div class="game-title__extra-info">
                             <span class="game-info__console">Nintendo Switch</span>
-                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank">
+                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank" title="go to Wishlist page">
                                 <i class="far fa-heart"></i>
                             </a>
                         </div>
                     </li>
                     <li class="game-title">
-                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/minecraft-switch/">
+                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/minecraft-switch/" title="go to Minecraft game page">
                             <span></span>
-                            <img alt="Minecraft banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/m/minecraft-switch/hero">
+                            <img alt="Minecraft banner" src="assets/other_titles/minecraft.jpg">
                         </a>
                         <p class="game-title__date">06/20/18</p>
-                        <a href="https://www.nintendo.com/games/detail/minecraft-switch/">
+                        <a href="https://www.nintendo.com/games/detail/minecraft-switch/" title="go to Minecraft game page">
                             <h3 class="game-title__title">Minecraft</h3>
                         </a>
                         <p class="game-title__price">$29.99</p>
                         <div class="game-title__extra-info">
                             <span class="game-info__console">Nintendo Switch</span>
-                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank">
+                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank" title="go to Wishlist page">
                                 <i class="far fa-heart"></i>
                             </a>
                         </div>
                     </li>
                     <li class="game-title">
-                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/ninjala-switch/">
+                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/ninjala-switch/" title="go to Ninjala game page">
                             <span></span>
-                            <img alt="Ninjala banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/n/ninjala-switch/hero0908">
+                            <img alt="Ninjala banner" src="assets/other_titles/ninjala.jpg">
                         </a>
                         <p class="game-title__date">06/24/20</p>
-                        <a href="https://www.nintendo.com/games/detail/ninjala-switch/">
+                        <a href="https://www.nintendo.com/games/detail/ninjala-switch/" title="go to Ninjala game page">
                             <h3 class="game-title__title">Ninjala</h3>
                         </a>
                         <p class="game-title__price">$0.00</p>
                         <div class="game-title__extra-info">
                             <span class="game-info__console">Nintendo Switch</span>
-                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank">
+                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank" title="go to Wishlist page">
                                 <i class="far fa-heart"></i>
                             </a>
                         </div>
                     </li>
                     <li class="game-title">
-                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/">
+                        <a class="img-overlay" href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/" title="go to Pokémon Brilliant Diamond game page">
                             <span></span>
-                            <img alt="Pokémon Brilliant Diamond banner" src="https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/p/pokemon-brilliant-diamond-switch/hero">
+                            <img alt="Pokémon Brilliant Diamond banner" src="assets/other_titles/pokemon.jpg">
                         </a>
                         <p class="game-title__date">11/19/21</p>
-                        <a href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/">
+                        <a href="https://www.nintendo.com/games/detail/pokemon-brilliant-diamond-switch/" title="go to Pokémon Brilliant Diamond game page">
                             <h3 class="game-title__title">Pokémon™ Brilliant Diamond</h3>
                         </a>
                         <p class="game-title__price">$59.99</p>
                         <div class="game-title__extra-info">
                             <span class="game-info__console">Nintendo Switch</span>
-                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank">
+                            <a class="add-to-wishlist-icon" href="https://accounts.nintendo.com/authorize_guide?redirect_uri=https%3A%2F%2Faccounts.nintendo.com%2Fconnect%2F1.0.0%2Fauthorize%3Fclient_id%3De56201e414c97a10%26display%3Dtouch%26interacted%3D1%26prompt%3Dconsent%26redirect_uri%3Dhttps%253A%252F%252Fwww.nintendo.com%26response_mode%3Dweb_message%26response_type%3Dcode%2Bid_token%2Btoken%26scope%3DeshopAlps%2BmissionStatus%2BmissionStatus%253Aprogress%2Bopenid%2BpointWallet%2Buser%2Buser.birthday%2Buser.links%255B%255D.id%2Buser.mii%2Buser.wishlist%2BuserNotificationMessage%253AanyClients%2BuserNotificationMessage%253AanyClients%253Awrite%26state%3Dcc82042204bc1e3a95da9d14cb27687e%26web_message_target%3Dop-frame%26web_message_uri%3Dhttps%253A%252F%252Faccounts.nintendo.com&type=mixed" target="_blank" title="go to Wishlist page">
                                 <i class="far fa-heart"></i>
                             </a>
                         </div>
@@ -474,6 +479,7 @@
                 Nintendo of America Inc. | Headquarters are in Redmond, Washington, USA | <a class="footer__copyright__support" href="https://en-americas-support.nintendo.com/">Support</a>
             </span>
         </div>
-    </footer>    
+    </footer>  
+    <script src="https://kit.fontawesome.com/c0563bc619.js" crossorigin="anonymous"></script>  
 </body>
 </html>

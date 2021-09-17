@@ -304,29 +304,29 @@ body {
     transition: 0.3s;
 }
 
-.hamburguer-menu .hamburguer-menu__line:nth-last-child(2) {
+.hamburguer-menu .hamburguer-menu__line:nth-last-child(1) {
     top: 1px;
 }
 
-.hamburguer-menu .hamburguer-menu__line:nth-last-child(3) {
+.hamburguer-menu .hamburguer-menu__line:nth-last-child(2) {
     top: 8px;
 }
 
-.hamburguer-menu .hamburguer-menu__line:nth-last-child(4) {
+.hamburguer-menu .hamburguer-menu__line:nth-last-child(3) {
     top: 15px;
 }
 
-.hamburguer-menu input[type="checkbox"]:checked ~ .hamburguer-menu__line:nth-last-child(2) {
+.hamburguer-menu input[type="checkbox"]:checked ~ .hamburguer-menu__line:nth-last-child(1) {
     transform: rotate(45deg);
     width: 22px;
     transform-origin: left top;
 }
 
-.hamburguer-menu input[type="checkbox"]:checked ~ .hamburguer-menu__line:nth-last-child(3) {
+.hamburguer-menu input[type="checkbox"]:checked ~ .hamburguer-menu__line:nth-last-child(2) {
     opacity: 0;
 }
 
-.hamburguer-menu input[type="checkbox"]:checked ~ .hamburguer-menu__line:nth-last-child(4) {
+.hamburguer-menu input[type="checkbox"]:checked ~ .hamburguer-menu__line:nth-last-child(3) {
     transform: rotate(-45deg);
     width: 22px;
     transform-origin: left bottom;
@@ -488,6 +488,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3rem 0 1rem 0;
 }
 
 .game-gallery {
@@ -523,6 +524,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.game-gallery__controls button {
+    background-color: transparent;
 }
 
 .game-gallery__controls i {
