@@ -31,10 +31,29 @@ body {
     overflow-x: hidden;
 }
 
+/* Displays */
+.display-flex {
+    display: flex;
+}
+
 .center-flex {
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+/* GlideJS lib */
+.glide__bullet {
+    background-color: var(--dark-blue) !important;
+    opacity: 0.4;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    margin: 0 0.5rem;
+}
+
+.glide__bullet--active {
+    opacity: 1;
 }
 
 /* Horizontal line */
@@ -85,6 +104,10 @@ body {
 }
 
 /* Heart icon to wishlist */
+.add-to-wishlist-icon {
+    background-color: transparent;
+}
+
 .add-to-wishlist-icon i {
     font-size: 1.7rem;
     color: var(--red);
@@ -316,20 +339,24 @@ body {
     top: 15px;
 }
 
-.hamburguer-menu input[type="checkbox"]:checked ~ .hamburguer-menu__line:nth-last-child(1) {
+.hamburguer-menu.dialog-opened .hamburguer-menu__line:nth-last-child(1) {
     transform: rotate(45deg);
     width: 22px;
     transform-origin: left top;
 }
 
-.hamburguer-menu input[type="checkbox"]:checked ~ .hamburguer-menu__line:nth-last-child(2) {
+.hamburguer-menu.dialog-opened .hamburguer-menu__line:nth-last-child(2) {
     opacity: 0;
 }
 
-.hamburguer-menu input[type="checkbox"]:checked ~ .hamburguer-menu__line:nth-last-child(3) {
+.hamburguer-menu.dialog-opened .hamburguer-menu__line:nth-last-child(3) {
     transform: rotate(-45deg);
     width: 22px;
     transform-origin: left bottom;
+}
+
+.display-none {
+    display: none;
 }
 
 .menu-dialog {
@@ -340,13 +367,12 @@ body {
     position: fixed;
     top: 56px;
     right: -0.5rem;
-    display: none;
     padding: 1rem;
     z-index: 2;
 }
 
-.hamburguer-menu input[type="checkbox"]:checked ~ .menu-dialog {
-    display: block;
+.hamburguer-menu {
+    background-color: transparent;
 }
 
 .menu-dialog nav {
@@ -432,6 +458,7 @@ body {
     color: var(--red);
     font-weight: 800;
     width: fit-content;
+    background-color: transparent;
 }
 
 .game-info__wishlist i {
@@ -484,11 +511,7 @@ body {
 /* ===// Game gallery //=== */
 .game-gallery-wrapper {
     background-color: var(--light-blue);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem 0 1rem 0;
+    padding: 3rem 1rem 1rem 1rem;
 }
 
 .game-gallery {
@@ -523,7 +546,7 @@ body {
 .game-gallery__controls {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .game-gallery__controls button {
@@ -601,6 +624,7 @@ body {
 
 .game-title {
     min-width: 17%;
+    max-width: 18%;
     margin: 0 1rem;
     display: grid;
     grid-template-columns: 100%;
@@ -717,22 +741,49 @@ body {
     text-decoration: underline;
 }
 
-@media (max-width: 1430px) {
-    .game-title {
-        min-width: 20%;
-    }
+.expanded-img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: none;
+}
+
+.expanded-img div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+
+.expanded-img img {
+    width: 80%;
+    left: 10%;
+    top: 15%;
+    position: absolute;
+    z-index: 6;
+}
+
+.expanded-img span {
+    position: absolute;
+    background-color: var(--dark-grey);
+    opacity: 0.98;
+    width: 100vw;
+    height: 100vh;
+}
+
+.expanded {
+    display: block;
 }
 
 @media (max-width: 1252px) {
     .game-banner__game-seal {
         margin-left: -80px;
         margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 1018px) {
-    .game-title {
-        min-width: 26%;
     }
 }
 
@@ -831,11 +882,5 @@ body {
         ". ."
         ". .";
         grid-template-columns: auto;
-    }
-}
-
-@media (max-width: 754px) {
-    .game-title {
-        min-width: 38%;
     }
 }

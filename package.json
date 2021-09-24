@@ -1,0 +1,22 @@
+{
+  "name": "nintendo",
+  "version": "1.0.0",
+  "description": "This is an exercise from ![Fronted Practice](https://www.frontendpractice.com/) to recreate the ![Stardew Valley's game page](https://www.nintendo.com/games/detail/stardew-valley-switch/) from Nintendo website.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vickyad/internship-front-exercise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vickyad/internship-front-exercise/issues"
+  },
+  "homepage": "https://github.com/vickyad/internship-front-exercise#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1"
+  }
+}
