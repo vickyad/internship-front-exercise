@@ -14,6 +14,8 @@ const handleWishlist = (name) => {
 }
 
 const handleImgClick = (id) => {
+    console.log(id)
     const img = document.getElementById(id)
+    console.log(img)
     img.classList.toggle('expanded')
 }

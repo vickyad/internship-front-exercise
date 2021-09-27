@@ -56,6 +56,7 @@ const init = () => {
             </div>
         </li>
         `
+        return markup
     })
     document.querySelector('.expanded-img-list').innerHTML = expanded_itens.join('')
 
