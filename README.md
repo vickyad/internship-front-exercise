@@ -1,6 +1,8 @@
-# Recreating Stardew Valley's page from Nintendo website 
-### Dentsu // Front Track - Internship exercise
-This is an exercise from ![Fronted Practice](https://www.frontendpractice.com/) to recreate the ![Stardew Valley's game page](https://www.nintendo.com/games/detail/stardew-valley-switch/) from Nintendo website.
+# Isobar IWS :: Front End Old Recruitment Process
+### Dentsu // Frontend Track - Internship exercise
+
+## isobar.fm
+The project consists of creating a simple web app with single page experience where the user is able to view a list of bands and their albums. The comps detailing the specific screens are below, we ask you to follow those and develop the web app as a mobile-first application, focusing on the design and experience for mobile screens. Besides listing, we would also like to be able to search for a specific band and order the list alphabetically or by popularity.
 
 ## Tools
 ![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5)&nbsp;
@@ -9,6 +11,3 @@ This is an exercise from ![Fronted Practice](https://www.frontendpractice.com/) 
 
 ## How to use
 Clone the repo and open the `index.html`
-
-## Page to recreate
-![Stardew Valley page](https://www.frontendpractice.com/static/0253e1aabdff5a88940344e6083b7a66/893fe/1e246b80-6aad-42ab-90d7-d02d663bc3a2_Nintendo%2Bgame%2Bpage.png)
